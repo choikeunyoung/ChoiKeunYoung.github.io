@@ -14,14 +14,14 @@
         <div class="nav-form__contents">
             <p class="nav-form__contents__title">CKY's Portfolio</p>
             <div class="nav-form__contents__links">
-                <a href="#" class="nav-form__contents__links__link">About me</a>
-                <a href="#" class="nav-form__contents__links__link">Skills</a>
-                <a href="#" class="nav-form__contents__links__link">Projects</a>
+                <a href="#section-1" class="nav-form__contents__links__link">About me</a>
+                <a href="#section-2" class="nav-form__contents__links__link">Skills</a>
+                <a href="#section-3" class="nav-form__contents__links__link">Projects</a>
                 <a href="#" class="nav-form__contents__links__link">Careers</a>
             </div>
         </div>
     </nav>
-    <section class="main-form">
+    <section class="main-form" id="section-1">
         <div class="main-form__section-1">
             <svg class="sky"></svg>
             <div class="main-form__section-1__contents">
@@ -88,77 +88,90 @@
                 </div>
             </div>
         </div>
-        <div class="main-form__section-2">
+        <div class="main-form__section-2" id="section-2">
             <p class="main-form__section-2__title">Skills</p>
             <div class="main-form__section-2__skill-form">
-                <div class="main-form__section-2__skill-form__skills">
-                    <img src="./HTML.png" alt="">
-                    <img src="./CSS.png" alt="">
-                    <img src="./JS.png" alt="">
-                    <img src="./github.png" alt="">
-                    <img src="./react.png" alt="">
+                <div class="main-form__section-2__skill-form__front">
+                    <p class="main-form__section-2__skill-form__front__title">Front-End</p>
+                    <div class="main-form__section-2__skill-form__skills">
+                        <img src="./HTML.png" alt="">
+                        <img src="./CSS.png" alt="">
+                        <img src="./JS.png" alt="">
+                        <img src="./github.png" alt="">
+                        <img src="./react.png" alt="">
+                    </div>
                 </div>
-                <div class="main-form__section-2__skill-form__progressbar">
-                    <div class="main-form__section-2__skill-form__progressbar__bar">
-                        <span class="main-form__section-2__skill-form__progressbar__bar__progress">0</span>
+                <div class="main-form__section-2__skill-form__back">
+                    <p class="main-form__section-2__skill-form__back__title">Back-End</p>
+                    <div class="main-form__section-2__skill-form__skills">
+                        <img src="./django.png" alt="">
+                        <img src="./mysql.png" alt="">
+                        <img src="./python.png" style="width: 300px;" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main-form__section-3">
-            <div class="main-form__section-3__slide-container">
-                <div class="main-form__section-3__slide-container__slide-box">
-                    <h1>YammyChu(야미추)</h1>
-                    <div class="main-form__section-3__slide-container__slide-box__contents">
-                        <div class="main-form__section-3__slide-container__slide-box__contents__imgs">
-                            <img src="https://github.com/choikeunyoung/semi_project_2/raw/master/2%E1%84%90%E1%85%B5%E1%86%B7%20YammyChu%20ec9d56602c5f4bce9d34a3622198b526/Untitled.png"
-                                alt="">
-                            <img src="https://github.com/choikeunyoung/semi_project_2/raw/master/2%E1%84%90%E1%85%B5%E1%86%B7%20YammyChu%20ec9d56602c5f4bce9d34a3622198b526/Untitled%201.png"
-                                alt="">
-                        </div>
-                        <div class="main-form__section-3__slide-container__slide-box__contents__infos">
-                            <span>YammyChu(야미추)</span>
-                            <span>는 야구장의 미친맛 추천의 약자로 야구장에 가서 매점을 찾느라 고생하는 팬들을 위한 안성맞춤 서비스입니다. 구장별 매점 정보에 더하여 주변 맛집,
-                                다른 팬들의 리뷰도 서로 공유하며 소통을 할 수 있습니다.</span>
-                            <br>
-                            <br>
-                            <span>이러한 서비스를 기획하게 된 계기는 구장별로 매장들의 위치 및 음식들에 대한 정보가 제대로 정리되어있지 않거나 명확하게 존재하지 않고, 각 구단별 앱을
-                                통해서 확인할 수 있는 곳도 있지만 확인할 수 없는 구단도 존재하기 때문에 이러한 정보들을 정리하여 한 곳에서 확인할 수 있도록 하기위해
-                                만들었습니다.</span>
-                            <br>
-                            <span></span>
-                            <br>
-                            <a href="https://github.com/choikeunyoung/semi_project_2"><button>GitHub에서 자세히
-                                    보기</button></a>
-                            <hr>
-                            <span>❓ 주요기능 👉</span>
-                            <span>회원 가입, 로그인, CRUD, 본인이 선택한 팀의 색에 맞게 홈페이지 테마 색이 변경됨, 카테고리별 게시글 분류, 리뷰 별점 순으로
-                                정렬, 원하는 매장 검색, 모바일 환경에서 볼 수 있도록 반응형 구현, 매장별 상세위치 마커기능</span>
+            <div class="main-form__section-3" id="section-3">
+                <img src="./arrow_right.png" id="nextPage" class="main-form__section-3__right" alt="">
+                <img src="./arrow_left.png"  id="prePage" class="main-form__section-3__left" alt="">
+                <div class="main-form__section-3__slide-container" id="slideContainer">
+                    <div class="main-form__section-3__slide-container__slide-box">
+                        <div class="main-form__section-3__slide-container__slide-box__contents">
+                            <img src="./JS.png">
                         </div>
                     </div>
-                </div>
-                <div class="main-form__section-3__slide-container__slide-box">
-                    <div class="main-form__section-3__slide-container__slide-box__contents">
-                        <img src="./JS.png">
+                    <!-- <div class="main-form__section-3__slide-container__slide-box">
+                        <h1>YammyChu(야미추)</h1>
+                        <div class="main-form__section-3__slide-container__slide-box__contents">
+                            <div class="main-form__section-3__slide-container__slide-box__contents__imgs">
+                                <img src="https://github.com/choikeunyoung/semi_project_2/raw/master/2%E1%84%90%E1%85%B5%E1%86%B7%20YammyChu%20ec9d56602c5f4bce9d34a3622198b526/Untitled.png"
+                                    alt="">
+                                <img src="https://github.com/choikeunyoung/semi_project_2/raw/master/2%E1%84%90%E1%85%B5%E1%86%B7%20YammyChu%20ec9d56602c5f4bce9d34a3622198b526/Untitled%201.png"
+                                    alt="">
+                            </div>
+                            <div class="main-form__section-3__slide-container__slide-box__contents__infos">
+                                <span>YammyChu(야미추)</span>
+                                <span>는 야구장의 미친맛 추천의 약자로 야구장에 가서 매점을 찾느라 고생하는 팬들을 위한 안성맞춤 서비스입니다. 구장별 매점 정보에 더하여 주변 맛집,
+                                    다른 팬들의 리뷰도 서로 공유하며 소통을 할 수 있습니다.</span>
+                                <br>
+                                <br>
+                                <span>이러한 서비스를 기획하게 된 계기는 구장별로 매장들의 위치 및 음식들에 대한 정보가 제대로 정리되어있지 않거나 명확하게 존재하지 않고, 각 구단별
+                                    앱을
+                                    통해서 확인할 수 있는 곳도 있지만 확인할 수 없는 구단도 존재하기 때문에 이러한 정보들을 정리하여 한 곳에서 확인할 수 있도록 하기위해
+                                    만들었습니다.</span>
+                                <br>
+                                <span></span>
+                                <br>
+                                <a href="https://github.com/choikeunyoung/semi_project_2"><button>GitHub에서 자세히
+                                        보기</button></a>
+                                <hr>
+                                <span>❓ 주요기능 👉</span>
+                                <span>회원 가입, 로그인, CRUD, 본인이 선택한 팀의 색에 맞게 홈페이지 테마 색이 변경됨, 카테고리별 게시글 분류, 리뷰 별점 순으로
+                                    정렬, 원하는 매장 검색, 모바일 환경에서 볼 수 있도록 반응형 구현, 매장별 상세위치 마커기능</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="main-form__section-3__slide-container__slide-box">
+                        <div class="main-form__section-3__slide-container__slide-box__contents">
+                            <img src="./JS.png">
+                        </div>
                     </div>
-                </div>
-                <div class="main-form__section-3__slide-container__slide-box">
-                    <div class="main-form__section-3__slide-container__slide-box__contents">
-                        <img src="./HTML.png">
+                    <div class="main-form__section-3__slide-container__slide-box">
+                        <div class="main-form__section-3__slide-container__slide-box__contents">
+                            <img src="./HTML.png">
+                        </div>
                     </div>
-                </div>
-                <div class="main-form__section-3__slide-container__slide-box">
-                    <div class="main-form__section-3__slide-container__slide-box__contents">
-                        <img src="./HTML.png">
+                    <div class="main-form__section-3__slide-container__slide-box">
+                        <div class="main-form__section-3__slide-container__slide-box__contents">
+                            <img src="./HTML.png">
+                        </div>
                     </div>
-                </div>
-                <div class="main-form__section-3__slide-container__slide-box">
-                    <div class="main-form__section-3__slide-container__slide-box__contents">
-                        <img src="./HTML.png">
+                    <div class="main-form__section-3__slide-container__slide-box">
+                        <div class="main-form__section-3__slide-container__slide-box__contents">
+                            <img src="./HTML.png">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer>
     </footer>

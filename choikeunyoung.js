@@ -33,5 +33,27 @@ const makeStars = () => {
 }
 
 window.onload = () => {
+ 
     makeStars();
 }
+
+const nextPage = document.querySelector("#nextPage");
+const prePage = document.querySelector("#prePage");
+const slideContainer = document.querySelector("#slideContainer");
+let index = 0;
+
+nextPage.addEventListener("click", () => {
+    index += 1;
+    if (index > 4) {
+        index = 0
+    }
+    slideContainer.style.transform = `translate3d(-${screen.width * index}px, 0, 0)`
+})
+
+prePage.addEventListener("click", () => {
+    index -= 1;
+    if (index < 0) {
+        index = 4
+    }
+    slideContainer.style.transform = `translate3d(-${screen.width * index}px, 0, 0)`
+})

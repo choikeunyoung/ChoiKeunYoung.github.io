@@ -152,7 +152,7 @@ div {
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, .1);
-    padding: 2rem;
+    padding: 1rem 2rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     z-index: 1;
@@ -192,6 +192,7 @@ div {
 .main-form__section-1__contents-2__infos__info__text p {
     font-size: 20px;
     font-weight: 500;
+    margin: .5rem 0;
 }
 
 /* 메인 페이지 두번쨰 구역  */
@@ -211,20 +212,27 @@ div {
 
 .main-form__section-2__title {
     font-size: 3rem;
-    font-weight: bold;
-    padding-bottom: 3rem;
+    font-weight: bold;  
 }
 
 .main-form__section-2__skill-form {
     width: 100%;
+    height: 70%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+.main-form__section-2__skill-form__front__title, .main-form__section-2__skill-form__back__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .main-form__section-2__skill-form__skills {
     width: 550px;
-    height: 800px;
+    height: 700px;
     border-radius: 2rem;
     box-shadow: 5px 5px 5px 5px black;
     background-color: white;
@@ -266,56 +274,7 @@ div {
     bottom: 10%;
 }
 
-.main-form__section-2__skill-form__progressbar {
-    width: 1000px;
-    height: 600px;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 5px 5px black;
-    margin-left: 2rem;
-}
-
-.main-form__section-2__skill-form__progressbar__bar {
-    width: 400px;
-    height: 15px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #ccc;
-    position: relative;
-}
-
-.main-form__section-2__skill-form__progressbar__bar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 15px;
-    width: 0;
-    background: blue;
-    animation: progress 5s ease forwards;
-}
-
-@keyframes progress {
-    0% {
-        width: 0px
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.main-form__section-2__skill-form__progressbar__bar__progress {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 99;
-}
-
-.main-form__section-2__skill-form__progressbar__bar__progress::after {
-    content: '%';
-
-}
+/* section 3 구역 */
 
 .main-form__section-3 {
     width: 100%;
@@ -328,24 +287,46 @@ div {
     background: rgba(37, 126, 183, .8);
 }
 
+.main-form__section-3__right {
+    width: 64px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.main-form__section-3__left {
+    width: 64px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.main-form__section-3__left:hover, .main-form__section-3__right:hover {
+    translate: all .3s;
+    opacity: 1;
+    cursor: pointer;
+}
+
 .main-form__section-3__slide-container {
-    width: 100vw;
+    width: 500vw;
     height: 94vh;
+    display: flex;
     transition: all 1s;
-    float: left;
-    overflow: hidden;
     margin: 0 auto;
+    overflow: hidden
 }
 
 .main-form__section-3__slide-container__slide-box {
-    width: 95vw;
+    width: 100vw;
     height: 100%;
-    float: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 5vw;
 }
 
 .main-form__section-3__slide-container__slide-box__contents {
